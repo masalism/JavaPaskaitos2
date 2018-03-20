@@ -20,6 +20,8 @@ public class MyFirstClass {
         char e = 'A';
 
         String f = "This is string";
+
+        System.out.println("labas");
     }
 
     private void myNotStaticMethod(int numb) {
@@ -29,4 +31,12 @@ public class MyFirstClass {
     private static void myStaticMethod(){
         System.out.println("Cia yra statinis metodas");
     }
+
 }
+
+//git init
+//git add .
+//git commit -m "tektstas
+//git remote ad origin....
+//git push -u origin master
+//git pull
