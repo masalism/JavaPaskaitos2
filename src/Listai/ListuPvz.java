@@ -11,13 +11,14 @@ public class ListuPvz {
         List<Integer> numbers = new ArrayList<>(); //paprasciausias, kurti sita dazniausiai
 
         names.add("Mantas");
+        names.add("Gabija");
         names.add("Andrius");
         names.add("Gabija");
-        names.add("Gabija");
+        names.add(2, "Andrius");
 
 
         //kad atvaizduotu visa lista
-        for(String name : names) {
+        for (String name : names) {
             System.out.println(name);
         }
 
@@ -39,6 +40,10 @@ public class ListuPvz {
         //rusoiuoti lista
         Collections.sort(numbers);
 
-        numbers.forEach(System.out :: println);
+        //listo spausdinimas, nuo 8 java
+        numbers.forEach(System.out::println);
+        //a -> nurodo ka ta reiksme darys toliau
+        names.forEach(a -> System.out.println("Index " + names.indexOf(a) + " reiksmes " + a));
+
     }
 }
